@@ -1,3 +1,126 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+}
+
+/* Общие */
 body {
-  background-color: tomato;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Кнопка */
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/* Лого */
+.logo {
+  color: #000;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* Основная навигация */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Контакты в хедере */
+.contacts-header .link {
+  color: var(--primary-text-color);
+}
+
+.contacts-header .link:hover,
+.contacts-header .link:focus {
+  color: var(--accent-color);
+}
+
+/* Футер */
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer .logo {
+  color: var(--primary-white-color);
+}
+
+.address {
+  color: var(--primary-white-color);
+}
+
+.contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* CSS страницы Студия */
+/* Герой */
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Секции */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Качества */
+.quality-title {
+  color: var(--title-text-color);
+}
+
+/* Команда */
+.command {
+  background-color: var(--secondary-background-color);
+}
+
+.command-name {
+  color: var(--title-text-color);
+}
+
+/* CSS страницы Портфолио */
+/* Фильтры */
+.filters-button {
+  background-color: var(--secondary-background-color);
+  color: var(--title-text-color);
+}
+
+.filters-button:hover,
+.filters-button:focus,
+.filters-button.current {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/* Карточки проектов */
+.projects-card {
+  background-color: var(--primary-white-color);
+  border: 1px solid #eeeeee;
+}
+
+.projects .title {
+  color: var(--title-text-color);
+}
+
+.projects .text {
+  color: var(--primary-text-color);
 }
